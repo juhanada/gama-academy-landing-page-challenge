@@ -1,0 +1,223 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 0;
+}
+
+.header-logo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.header-logo{
+    height: 80px;
+    width: auto;
+}
+
+.store-name{
+    font-family: 'Lobster', cursive;
+    font-size: 40px;
+    margin-right: 10px;
+    color: rgb(116, 8, 8);
+}
+
+.header-links{
+    margin-right: 20px;
+}
+
+.header-links > a{
+    color: #666340;
+    margin: 0 20px;
+    text-decoration: none;
+}
+
+.header-links > a:hover{
+    cursor: pointer;
+}
+
+.landing-container{
+    background-image: url("./assets/bg.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 50px;
+    padding-top: 100px;
+}
+
+.title-section{
+    width: 98%;
+    text-align: center;
+    color: #EFF4F0;
+}
+
+.title-section > h2{
+    color: #cac8ad;
+    font-size: 30px;
+}
+
+.title-section > h1{
+    font-size: 40px;
+}
+
+.subscription-section{
+    width: 98%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscription-image {
+    margin-right: 50px;
+}
+
+.subscription-image > img{
+    width: 350px;
+    height: auto;
+    border-radius: 20px;
+    border: 3px solid #666340;
+}
+
+.subscription-form{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color: #EFF4F0;
+    padding: 25px;
+    border-radius: 20px;
+    border: 3px solid #666340;
+}
+
+.subscription-form > h3{
+    text-align: center;
+}
+.subscription-form > label{
+    margin-top: 20px;
+}
+
+.subscription-form > input {
+    margin-top: 10px;
+    padding: 5px;
+    border: 0 none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.subscription-form > input:focus{
+    box-shadow: 0;
+    outline: 0;
+}
+
+.subscription-form > button{
+    margin-top: 50px;
+    padding: 5px;
+    height: 40px;
+    border-radius: 5px;
+    border: 0 none;
+    font-size: 20px;
+    background-color: #970C10;
+    color: #EFF4F0;
+}
+
+.subscription-form > button:hover{
+    cursor: pointer;
+    border: 2px solid #EFF4F0;
+}
+
+.products-container{
+    background-color: #EFF4F0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 100px 0;
+}
+
+.product-card{
+    border: 2px solid #666340;
+    border-radius: 25px;
+    text-align: center;
+    padding: 20px;
+    width: 240px;
+}
+
+.product-card >img{
+    height: 240px;
+    border-radius: 20px;
+    width: auto;
+}
+
+.product-description{
+    color: #970C10;
+    font-weight: 750;
+}
+
+footer{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon{
+    height: 28px;
+    width: auto;
+    margin: 0 15px;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+@media (max-width: 900px) {
+    .subscription-image > img{
+        height: auto;
+    }
+}
+
+@media(max-width: 700px){
+
+    .landing-container{
+        padding-top: 120px;
+        height: 150vh;
+    }
+    .subscription-section{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .subscription-image {
+        margin: 0;
+    }
+
+    .subscription-image > img{
+        width: 350px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+}

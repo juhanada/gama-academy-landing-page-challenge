@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+    <head>
+        <title></title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <link rel="stylesheet" type="text/css" href="./style.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic. com"     crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <header class="header-container">
+            <div class="header-logo">
+                <a href="#landing-container"><img class="header-logo" src="./assets/logo.PNG"></a>
+                <p class="store-name">my lingerie - você cada vez mais sexy</p>
+            </div>
+            
+            <div class="header-links">
+                <a href="#products-session">produtos</a>
+                <a href="#footer">contato</a>
+            </div>
+        </header>
+        
+        <main>
+            <a name="landing-container"></a>
+            <section class="landing-container">
+                
+                <div class="title-section">
+                    <h1>ofertas imperdíveis!</h1>
+                    <h2>a lingerie que você sempre sonhou está aqui e em promoção &lt3</h2>                    
+                </div>
+                
+                <div class="subscription-section">
+
+                    <div class="subscription-image">
+                        <img src="./assets/main.jpg">
+                    </div>
+                    
+                    <form id="subscription-form" class="subscription-form">
+                        <h3>cadastrar para receber as ofertas</h3>                        
+                        <label for="name-input">como gostaria de ser chamado</label>
+                        <input type="text" id="name-input" placeholder="seu nome">
+                        <label for="email-input">seu melhor e-mail</label>
+                        <input type="text" id="email-input" placeholder="email@exemplo.com">
+                        <button id="subscription-button"> receber ofertas incríveis</button>
+                        <p id="subscribed-message" class="subscribed-message hidden">sucesso! você está cadastrado</p>
+                    </form>
+                </div>
+                <script src="./index.js"></script>
+            </section>
+
+            <a name="products-session"></a>
+            <section class="products-container">
+                <div class="product-card">
+                    <img src="./assets/prod1.png">
+                    <p class="product-description">conjunto alessandra vermelho</p>
+                    <p class="product-price">R$ 49,90</p>
+                </div>
+                <div class="product-card">
+                    <img src="./assets/prod2.png">
+                    <p class="product-description">conjunto lavinia rosa</p>
+                    <p class="product-price">R$ 69,90</p>
+                </div>
+                <div class="product-card">
+                    <img src="./assets/prod3.png">
+                    <p class="product-description">conjunto ana preto</p>
+                    <p class="product-price">R$ 39,90</p>
+                </div>
+                <div class="product-card">
+                    <img src="./assets/prod4.png">
+                    <p class="product-description">conjunto renata branco</p>
+                    <p class="product-price">R$ 79,90</p>
+                </div>
+            </section>
+        </main>
+
+        <a name="footer"></a>
+        <footer>
+            <div class="rights">
+                <p>Copyright 2021 | Todos os direitos reservados | Produzido por <a href="https://www.linkedin.com/in/juilehanada/">Juíle Hanada</a></p>
+                <p>Curso Hiring Coders - <a href="https://www.gama.academy/">Gama Academy</a></p>
+            </div>
+            <div class="contact">
+                <a href="https://www.linkedin.com/in/juilehanada/"><img class="contact-icon" src="assets/inicon.png"></a>
+                <a href="https://github.com/juhanada"><img class="contact-icon" src="./assets/giticon.png"></a>
+                <a href="mailto:juhanada@gmail.com"><img  class="contact-icon" src="./assets/gmailicon.png"></a>
+            </div>
+        </footer>
+    </body>
+</html>
