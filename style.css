@@ -14,6 +14,7 @@ header{
     left: 0;
     width: 100%;
     padding: 15px 0;
+    box-shadow: 0px 6px 5px rgb(54, 54, 54);
 }
 
 .header-logo{
@@ -21,39 +22,47 @@ header{
     flex-direction: row;
     align-items: center;
     margin-right: 10px;
-}
-
-.header-logo{
     height: 80px;
     width: auto;
+    cursor: pointer;
+}
+
+.header-logo > a{
+    text-decoration: none;
 }
 
 .store-name{
     font-family: 'Lobster', cursive;
-    font-size: 40px;
+    font-size: 2.4rem;
     margin-right: 10px;
     color: rgb(116, 8, 8);
 }
 
 .header-links{
     margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
 }
 
 .header-links > a{
     color: #666340;
-    margin: 0 20px;
+    margin: 0px 20px;
+    line-height: 36px;
     text-decoration: none;
 }
 
 .header-links > a:hover{
     cursor: pointer;
+    font-size: 24px;
+    font-style: bold;
 }
 
 .landing-container{
     background-image: url("./assets/bg.jpg");
     background-attachment: fixed;
     background-size: cover;
-    height: 80vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -72,10 +81,13 @@ header{
 .title-section > h2{
     color: #cac8ad;
     font-size: 30px;
+    cursor: default;
 }
 
 .title-section > h1{
     font-size: 40px;
+    font-family: 'Otomanopee One', sans-serif;
+    cursor: default;
 }
 
 .subscription-section{
@@ -93,7 +105,7 @@ header{
     width: 350px;
     height: auto;
     border-radius: 20px;
-    border: 3px solid #666340;
+    box-shadow: 0px 0px 8px rgb(31, 31, 31);
 }
 
 .subscription-form{
@@ -103,11 +115,12 @@ header{
     background-color: #EFF4F0;
     padding: 25px;
     border-radius: 20px;
-    border: 3px solid #666340;
+    box-shadow: 0px 0px 8px rgb(31, 31, 31);
 }
 
 .subscription-form > h3{
     text-align: center;
+    cursor: default;
 }
 .subscription-form > label{
     margin-top: 20px;
@@ -124,6 +137,10 @@ header{
 .subscription-form > input:focus{
     box-shadow: 0;
     outline: 0;
+}
+
+.subscription-form > input:hover{
+    cursor: pointer;
 }
 
 .subscription-form > button{
@@ -145,11 +162,12 @@ header{
 .products-container{
     background-color: #EFF4F0;
     width: 100%;
+    height: 460px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
-    padding: 100px 0;
+    padding: 0;
 }
 
 .product-card{
@@ -158,6 +176,23 @@ header{
     text-align: center;
     padding: 20px;
     width: 240px;
+    margin: 20px;
+    box-shadow: 2px 2px 10px rgb(117, 117, 117);
+}
+
+.product-card:hover{
+    cursor: pointer;
+    width: 260px;
+    box-shadow: 10px 10px 8px rgb(117, 117, 117);
+}
+
+.product-card:hover > img{
+    height: 260px;
+    width: auto;
+}
+
+.product-card:hover .product-description{
+    font-size: 20px;
 }
 
 .product-card >img{
@@ -168,13 +203,15 @@ header{
 
 .product-description{
     color: #970C10;
-    font-weight: 750;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
 }
 
 footer{
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
+    font-size: 12px;
 }
 
 .contact{
@@ -193,17 +230,35 @@ footer{
     visibility: hidden;
 }
 
-@media (max-width: 900px) {
-    .subscription-image > img{
-        height: auto;
+@media(max-width: 1296px){
+    .products-container{
+        height: 880px;
     }
 }
 
 @media(max-width: 700px){
 
+    header{
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+
+    .header-logo{
+        height: 70px;
+        width: auto;
+        margin:0
+    }
+
+    .store-name{
+        font-size: 2rem;
+    }
+
+    .header-links{
+        margin: 10px 0;
+    }
+
     .landing-container{
-        padding-top: 120px;
-        height: 150vh;
+        padding-top: 140px;
     }
     .subscription-section{
         flex-direction: column;
@@ -219,5 +274,11 @@ footer{
         width: 350px;
         height: auto;
         margin-bottom: 20px;
+    }
+
+    .products-container{
+        padding: 0;
+        flex-direction: column;
+        height: auto;
     }
 }
