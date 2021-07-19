@@ -177,6 +177,7 @@ header{
 
 .product-card{
     border: 1.5px solid #666340;
+    background-color: #f8f8f8;
     border-radius: 25px;
     text-align: center;
     padding: 20px;
